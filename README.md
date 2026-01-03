@@ -22,6 +22,7 @@ A curated list of official APIs owned by government of India.
 <li><a href="https://data.gov.in/catalog/rainfall-india"> Rainfall India </a> </li>
 
 <li><a href="https://aadhaarapi.com/">Aadhaar API</a> </li>
+<li><a href="https://vedika.io">Vedika API</a> - Vedic Astrology REST API with birth charts, horoscopes, panchang, kundali matching, dosha analysis, and AI chatbot (India-based B2B API platform)</li>
 <li><a href="http://api.erail.in/">eRail API</a> </li>
 <li><a href="http://indianrailapi.com/IndianRail/API/">Indian Rail API</a> </li>
 <li><a href="https://data.gov.in/ogpl_apis">Open Government Data (OGD) Platform India</a> </li>
