@@ -3,6 +3,7 @@ A curated list of official APIs owned by government of India.
 
 
 <li><a href="https://data.gov.in/catalog/all-india-pincode-directory ">All India PINCODE Directory </a> </li>
+<li><a href="https://indianpincode.com/">Indian Pincode API</a> - Free PIN code lookup with GPS coordinates. 165k+ post offices, state & district data. No auth required. </li>
 <li><a href="https://data.gov.in/catalog/state-and-district-wise-scheduled-caste-and-schedule-tribe-population-each-caste-and-tribe  ">State and district wise SC & ST tribe population  </a> </li>
 <li><a href="https://data.gov.in/catalog/import-export-classification-itc-hs-code-and-import-policy  "> Import Export Classification, ITC (HS) Code And Import Policy</a> </li>
 
