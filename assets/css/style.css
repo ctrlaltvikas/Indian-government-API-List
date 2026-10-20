@@ -1,27 +1,40 @@
 /* ==========================================================================
-   INDIAN GOVERNMENT APIS & DATA SOURCES - MODERN NATIONAL THEME
-   Inspired by Digital India, India Stack & National DPI Aesthetics
+   INDIAN GOVERNMENT APIS & DATA SOURCES
+   UX4G ALIGNED DESIGN SYSTEM (NeGD / MeitY, Government of India)
    ========================================================================== */
 
 :root {
-  /* Core Color Palette - Light Mode */
+  /* UX4G Official Core Brand Tokens */
+  --ux4g-primary: #6a4eff;
+  --ux4g-primary-hover: #5838fc;
+  --ux4g-primary-active: #4524ea;
+  --ux4g-primary-light: rgba(106, 78, 255, 0.08);
+  --ux4g-primary-border: rgba(106, 78, 255, 0.25);
+
+  /* UX4G National Identity Tokens */
   --saffron: #ff8800;
   --saffron-light: #fff3e6;
   --saffron-hover: #e07700;
   --white: #ffffff;
-  --green: #138808;
+  --green: #1aa64a;
   --green-light: #e8f5e9;
-  --green-glow: rgba(19, 136, 8, 0.15);
+  --green-glow: rgba(26, 166, 74, 0.15);
   --navy: #0a192f;
   --ashoka-blue: #000080;
-  --ashoka-accent: #1e40af;
 
-  /* Theme Dynamic Tokens (Light Mode Default) */
+  /* UX4G Semantic Tokens */
+  --ux4g-success: #1aa64a;
+  --ux4g-warning: #ffab27;
+  --ux4g-danger: #f55e57;
+  --ux4g-info: #0284c7;
+
+  /* Light Mode Theme Tokens */
   --bg-page: #f8fafc;
   --bg-card: #ffffff;
   --bg-card-hover: #ffffff;
-  --bg-toolbar: rgba(255, 255, 255, 0.85);
-  --bg-header: rgba(255, 255, 255, 0.92);
+  --bg-toolbar: rgba(255, 255, 255, 0.88);
+  --bg-header: rgba(255, 255, 255, 0.94);
+  --bg-top-banner: #0f172a;
   --bg-hero: #f1f5f9;
   --bg-input: #ffffff;
   --bg-skeleton: #e2e8f0;
@@ -32,10 +45,11 @@
   --text-muted: #64748b;
   --text-subtle: #94a3b8;
   --text-gov: #047857;
+  --text-top-banner: #cbd5e1;
 
   --border-color: #e2e8f0;
   --border-card: #e2e8f0;
-  --border-focus: #ff8800;
+  --border-focus: #6a4eff;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
@@ -43,12 +57,14 @@
   --shadow-card: 0 2px 8px rgba(15, 23, 42, 0.05);
   --shadow-card-hover: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
   --radius-pill: 9999px;
 
-  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* UX4G Multi-script Typography Stack */
+  --font-main: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Noto Sans Display', 'Noto Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
@@ -60,21 +76,23 @@
   --bg-card: #131c31;
   --bg-card-hover: #18233c;
   --bg-toolbar: rgba(11, 17, 32, 0.88);
-  --bg-header: rgba(11, 17, 32, 0.92);
+  --bg-header: rgba(11, 17, 32, 0.94);
+  --bg-top-banner: #060913;
   --bg-hero: #0a0f1d;
   --bg-input: #131c31;
   --bg-skeleton: #1e293b;
   --bg-badge: #1e293b;
-  --bg-badge-gov: rgba(16, 185, 129, 0.12);
+  --bg-badge-gov: rgba(26, 166, 74, 0.15);
 
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-subtle: #64748b;
   --text-gov: #34d399;
+  --text-top-banner: #94a3b8;
 
   --border-color: #1e293b;
   --border-card: #1f2d4a;
-  --border-focus: #ff9933;
+  --border-focus: #6a4eff;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
@@ -106,6 +124,12 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+/* UX4G Universal Accessible Focus Rings */
+:focus-visible {
+  outline: 2px solid var(--ux4g-primary);
+  outline-offset: 2px;
+}
+
 .container {
   width: 100%;
   max-width: 1280px;
@@ -127,11 +151,93 @@ body {
   border: 0;
 }
 
+/* UX4G Skip-to-content accessibility link */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 1.5rem;
+  background: var(--ux4g-primary);
+  color: #ffffff;
+  padding: 0.6rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  z-index: 9999;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  box-shadow: var(--shadow-lg);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 /* ==========================================================================
-   National Tricolor Ambient Elements
+   UX4G Official Government of India Top Banner
    ========================================================================== */
+.ux4g-top-banner {
+  background-color: var(--bg-top-banner);
+  color: var(--text-top-banner);
+  font-size: 0.75rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.top-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.gov-flag {
+  font-size: 0.95rem;
+}
+
+.gov-sep {
+  opacity: 0.4;
+}
+
+.gov-text-hi {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.top-banner-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ux4g-compliance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(106, 78, 255, 0.2);
+  color: #a594ff;
+  border: 1px solid rgba(106, 78, 255, 0.4);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.675rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.top-banner-subtext {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+/* National Tricolor Ambient Strip */
 .tricolor-bar {
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: linear-gradient(
     90deg, 
@@ -139,10 +245,10 @@ body {
     #ff9933 33%, 
     #ffffff 48%, 
     #ffffff 52%, 
-    #138808 67%, 
-    #138808 100%
+    #1aa64a 67%, 
+    #1aa64a 100%
   );
-  box-shadow: 0 0 12px rgba(255, 136, 0, 0.4);
+  box-shadow: 0 0 10px rgba(255, 136, 0, 0.35);
   position: relative;
   z-index: 101;
 }
@@ -162,7 +268,7 @@ body {
 }
 
 .header-container {
-  height: 68px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,8 +290,8 @@ body {
 
 .emblem-wrapper {
   color: #3b82f6;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,16 +313,17 @@ body {
 }
 
 .brand-title {
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--text-main) 60%, var(--saffron));
+  background: linear-gradient(135deg, var(--text-main) 60%, var(--ux4g-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .brand-badge {
-  font-size: 0.7rem;
+  font-size: 0.675rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -245,7 +352,7 @@ body {
 }
 
 .search-trigger-btn:hover {
-  border-color: var(--saffron);
+  border-color: var(--ux4g-primary);
   color: var(--text-main);
   background: var(--bg-card);
 }
@@ -260,8 +367,8 @@ body {
 }
 
 .theme-toggle-btn {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--radius-md);
   background: var(--bg-badge);
   border: 1px solid var(--border-color);
@@ -275,7 +382,7 @@ body {
 
 .theme-toggle-btn:hover {
   background: var(--bg-card);
-  border-color: var(--saffron);
+  border-color: var(--ux4g-primary);
 }
 
 [data-theme="dark"] .sun-icon { display: block; }
@@ -300,15 +407,15 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--saffron);
+  background-color: var(--ux4g-primary);
   color: #ffffff;
-  border-color: var(--saffron);
-  box-shadow: 0 2px 8px rgba(255, 136, 0, 0.25);
+  border-color: var(--ux4g-primary);
+  box-shadow: 0 2px 8px rgba(106, 78, 255, 0.25);
 }
 
 .btn-primary:hover {
-  background-color: var(--saffron-hover);
-  border-color: var(--saffron-hover);
+  background-color: var(--ux4g-primary-hover);
+  border-color: var(--ux4g-primary-hover);
   transform: translateY(-1px);
 }
 
@@ -319,8 +426,8 @@ body {
 }
 
 .btn-secondary:hover {
-  border-color: var(--saffron);
-  color: var(--saffron);
+  border-color: var(--ux4g-primary);
+  color: var(--ux4g-primary);
 }
 
 .btn-outline-nav {
@@ -331,8 +438,8 @@ body {
 }
 
 .btn-outline-nav:hover {
-  border-color: var(--saffron);
-  color: var(--saffron);
+  border-color: var(--ux4g-primary);
+  color: var(--ux4g-primary);
 }
 
 .btn-github {
@@ -370,7 +477,7 @@ body {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 136, 0, 0.14) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 136, 0, 0.12) 0%, transparent 70%);
   pointer-events: none;
   filter: blur(50px);
 }
@@ -382,7 +489,7 @@ body {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(19, 136, 8, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(26, 166, 74, 0.1) 0%, transparent 70%);
   pointer-events: none;
   filter: blur(50px);
 }
@@ -410,6 +517,7 @@ body {
 }
 
 .hero-title {
+  font-family: var(--font-display);
   font-size: clamp(2rem, 4.5vw, 3.25rem);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -418,7 +526,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--saffron) 0%, #ff5500 50%, #3b82f6 100%);
+  background: linear-gradient(135deg, var(--ux4g-primary) 0%, #ff8800 60%, #1aa64a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -451,8 +559,8 @@ body {
 }
 
 .search-box:focus-within {
-  border-color: var(--saffron);
-  box-shadow: 0 0 0 4px rgba(255, 136, 0, 0.15), var(--shadow-lg);
+  border-color: var(--ux4g-primary);
+  box-shadow: 0 0 0 4px rgba(106, 78, 255, 0.15), var(--shadow-lg);
 }
 
 .search-box-icon {
@@ -522,18 +630,19 @@ body {
   flex-direction: column;
   align-items: center;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .stat-card:hover {
   transform: translateY(-2px);
-  border-color: var(--saffron);
+  border-color: var(--ux4g-primary);
 }
 
 .stat-number {
+  font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--saffron);
+  color: var(--ux4g-primary);
   letter-spacing: -0.02em;
 }
 
@@ -551,7 +660,7 @@ body {
    ========================================================================== */
 .toolbar-section {
   position: sticky;
-  top: 68px;
+  top: 64px;
   z-index: 90;
   background-color: var(--bg-toolbar);
   backdrop-filter: blur(12px);
@@ -605,15 +714,15 @@ body {
 
 .category-pill:hover {
   color: var(--text-main);
-  border-color: var(--saffron);
+  border-color: var(--ux4g-primary);
   background: var(--bg-badge);
 }
 
 .category-pill.active {
-  background: var(--saffron);
+  background: var(--ux4g-primary);
   color: #ffffff;
-  border-color: var(--saffron);
-  box-shadow: 0 2px 6px rgba(255, 136, 0, 0.3);
+  border-color: var(--ux4g-primary);
+  box-shadow: 0 2px 8px rgba(106, 78, 255, 0.3);
 }
 
 .pill-count {
@@ -644,7 +753,7 @@ body {
 
 .counter-highlight {
   font-weight: 700;
-  color: var(--saffron);
+  color: var(--ux4g-primary);
 }
 
 .counter-total {
@@ -671,7 +780,7 @@ body {
 }
 
 .domain-select:focus {
-  border-color: var(--saffron);
+  border-color: var(--ux4g-primary);
 }
 
 .view-mode-toggle {
@@ -700,7 +809,7 @@ body {
 
 .view-btn.active {
   background: var(--bg-card);
-  color: var(--saffron);
+  color: var(--ux4g-primary);
   box-shadow: var(--shadow-sm);
 }
 
@@ -727,6 +836,7 @@ body {
 }
 
 .category-group-title {
+  font-family: var(--font-display);
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -772,7 +882,7 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, var(--saffron), #3b82f6);
+  background: linear-gradient(90deg, var(--ux4g-primary), #1aa64a);
   opacity: 0;
   transition: opacity 0.25s ease;
 }
@@ -780,7 +890,7 @@ body {
 .api-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(255, 136, 0, 0.3);
+  border-color: rgba(106, 78, 255, 0.35);
 }
 
 .api-card:hover::before {
@@ -832,6 +942,7 @@ body {
 }
 
 .api-card-title {
+  font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -845,7 +956,7 @@ body {
 }
 
 .api-card-title a:hover {
-  color: var(--saffron);
+  color: var(--ux4g-primary);
 }
 
 .api-card-desc {
@@ -869,7 +980,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  color: var(--saffron);
+  color: var(--ux4g-primary);
   text-decoration: none;
   font-size: 0.825rem;
   font-weight: 700;
@@ -878,7 +989,7 @@ body {
 
 .btn-visit-api:hover {
   transform: translateX(2px);
-  color: var(--saffron-hover);
+  color: var(--ux4g-primary-hover);
 }
 
 .btn-copy-card {
@@ -898,11 +1009,11 @@ body {
 
 .btn-copy-card:hover {
   color: var(--text-main);
-  border-color: var(--saffron);
+  border-color: var(--ux4g-primary);
 }
 
 /* ==========================================================================
-   Data Table View
+   Data Table View (UX4G Compliant)
    ========================================================================== */
 .table-responsive-wrapper {
   background: var(--bg-card);
@@ -964,7 +1075,7 @@ body {
 }
 
 .table-col-name a:hover {
-  color: var(--saffron);
+  color: var(--ux4g-primary);
 }
 
 .table-col-domain {
@@ -1037,7 +1148,7 @@ body {
 
 /* Search match highlight */
 mark.search-highlight {
-  background: rgba(255, 136, 0, 0.25);
+  background: rgba(106, 78, 255, 0.22);
   color: inherit;
   padding: 0.1rem 0.25rem;
   border-radius: 3px;
@@ -1066,6 +1177,7 @@ mark.search-highlight {
 }
 
 .footer-title {
+  font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
@@ -1107,7 +1219,7 @@ mark.search-highlight {
 }
 
 .footer-links a:hover {
-  color: var(--saffron);
+  color: var(--ux4g-primary);
 }
 
 .footer-bottom {
@@ -1123,7 +1235,7 @@ mark.search-highlight {
 }
 
 .footer-bottom a {
-  color: var(--saffron);
+  color: var(--ux4g-primary);
   text-decoration: none;
 }
 
@@ -1144,8 +1256,8 @@ mark.search-highlight {
 }
 
 .btn-back-to-top:hover {
-  border-color: var(--saffron);
-  color: var(--saffron);
+  border-color: var(--ux4g-primary);
+  color: var(--ux4g-primary);
 }
 
 /* ==========================================================================
@@ -1210,6 +1322,7 @@ mark.search-highlight {
 }
 
 .modal-header-title h3 {
+  font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -1257,7 +1370,7 @@ mark.search-highlight {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--saffron);
+  background: var(--ux4g-primary);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -1352,7 +1465,7 @@ mark.search-highlight {
 }
 
 .toast-check-icon {
-  color: #10b981;
+  color: #1aa64a;
 }
 
 /* Fallback static view */
@@ -1385,6 +1498,10 @@ mark.search-highlight {
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 768px) {
+  .top-banner-right {
+    display: none;
+  }
+
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
   }

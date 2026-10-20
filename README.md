@@ -3,27 +3,31 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/ctrlaltvikas/Indian-government-API-List)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ctrlaltvikas/Indian-government-API-List/pulls)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Design: UX4G](https://img.shields.io/badge/Design-UX4G%20Compliant-6A4EFF.svg)](https://ux4g.gov.in)
 
-Welcome to the definitive, community-driven master repository of official Indian Government APIs, open data portals, and developer resources. Whether you are building civic tech, fintech solutions, logistics trackers, public welfare tools, or academic research projects, this curated directory connects you with official digital public infrastructure (DPI) and verified endpoints from Central and State Government departments across India.
+Welcome to the definitive, community-driven master repository of official Indian Government APIs, open data portals, and developer resources. Aligned with the **UX4G (User Experience for Government)** design framework by NeGD/MeitY, this curated directory connects civic technologists, fintech developers, researchers, and creators with verified endpoints and digital public infrastructure (DPI) from across Indian Central and State Government departments.
 
 ---
 
 ## 📑 Table of Contents
 
-- [🆔 Identity, Authentication & Verification](#identity-authentication--verification)
-- [💰 Finance, Banking & Taxation](#finance-banking--taxation)
-- [🚂 Logistics, Transport & Mapping](#logistics-transport--mapping)
-- [🌾 Agriculture & Rural Development](#agriculture--rural-development)
-- [📊 Open Government Data (OGD) & Statistics](#open-government-data-ogd--statistics)
-- [🏥 Health & Public Welfare](#health--public-welfare)
-- [⚡ Weather, Environment & Energy](#weather-environment--energy)
-- [🏛️ Legal, Governance & Tenders](#legal-governance--tenders)
+- [🆔 1. Identity, Authentication & Verification](#1-identity-authentication--verification)
+- [💰 2. Finance, Banking & Taxation](#2-finance-banking--taxation)
+- [🚂 3. Logistics, Transport & Mapping](#3-logistics-transport--mapping)
+- [🌾 4. Agriculture & Rural Development](#4-agriculture--rural-development)
+- [📊 5. Open Government Data (OGD) & Statistics](#5-open-government-data-ogd--statistics)
+- [🏥 6. Health & Public Welfare](#6-health--public-welfare)
+- [🌦️ 7. Weather, Climate & Environment](#7-weather-climate--environment)
+- [🏛️ 8. Legal, Governance & Tenders](#8-legal-governance--tenders)
+- [🎓 9. Education & Skill Development](#9-education--skill-development)
+- [⚡ 10. Energy, Utilities & Smart Cities](#10-energy-utilities--smart-cities)
+- [📡 11. Telecom, Cyber & Postal Services](#11-telecom-cyber--postal-services)
 - [🤝 How to Contribute](#how-to-contribute)
 - [⭐ Support the Project](#support-the-project)
 
 ---
 
-## 🆔 Identity, Authentication & Verification
+## 🆔 1. Identity, Authentication & Verification
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
@@ -33,10 +37,12 @@ Welcome to the definitive, community-driven master repository of official Indian
 | 4 | [National Portal of India Directory](https://www.india.gov.in/) | Central metadata directory indexing government services, ministry access points, and citizen identity registries across central and state tiers. |
 | 5 | [MeriPehchaan (e-Pramaan NSSO)](https://epramaan.meripehchaan.gov.in/) | National Single Sign-On (NSSO) authentication gateway providing multi-factor identity authentication and single sign-on across public service applications. |
 | 6 | [Protean Online PAN Verification](https://www.protean-tinpan.com/services-online-pan-verification.html) | Authorized real-time PAN validation service for financial institutions, registered companies, and entities requiring statutory identity compliance. |
+| 7 | [e-Shram Portal](https://eshram.gov.in/) | Ministry of Labour & Employment's comprehensive national database of unorganized workers with Universal Account Number (UAN) verification and social security data. |
+| 8 | [ECI Data Portal](https://eci.gov.in/) | Election Commission of India's voter services, electoral roll search, polling station locators, and election result statistical feeds. |
 
 ---
 
-## 💰 Finance, Banking & Taxation
+## 💰 2. Finance, Banking & Taxation
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
@@ -47,25 +53,28 @@ Welcome to the definitive, community-driven master repository of official Indian
 | 5 | [NPCI Standards & API Ecosystem](https://www.npci.org.in/) | Technical standards, specifications, and architecture guidelines for UPI, IMPS, NETC FASTag, AePS, and Bharat BillPay (BBPS). |
 | 6 | [MCA21 Portal (Ministry of Corporate Affairs)](https://www.mca.gov.in/) | Corporate registry database and master data lookup services for registered Indian companies, LLPs, and Director Identification Numbers (DIN). |
 | 7 | [Income Tax Department e-Filing](https://www.incometax.gov.in/) | Income tax e-filing ecosystem offering PAN-Aadhaar verification services, refund tracking, and taxpayer compliance interfaces. |
+| 8 | [PFMS (Public Financial Management System)](https://pfms.nic.in/) | Ministry of Finance central platform monitoring Direct Benefit Transfer (DBT) pipelines, tracking fund flows, and managing central scheme account transactions. |
 
 ---
 
-## 🚂 Logistics, Transport & Mapping
+## 🚂 3. Logistics, Transport & Mapping
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
 | 1 | [All India PINCODE Directory (OGD)](https://data.gov.in/catalog/all-india-pincode-directory) | Comprehensive national dataset mapping every 6-digit postal PIN code to corresponding post offices, taluks, districts, and states. |
 | 2 | [Parivahan Sewa (Vahan & Sarathi)](https://parivahan.gov.in/parivahan/) | Ministry of Road Transport and Highways (MoRTH) portals for national motor vehicle registration records (Vahan) and driving license management (Sarathi). |
-| 3 | [CRIS Freight Operations Information System (FOIS)](https://www.fois.indianrail.gov.in/) | Indian Railways freight data system monitoring rake allocations, freight movement, loading logistics, and real-time transit tracking. |
-| 4 | [IRCTC / NTES Train Status](https://enquiry.indianrail.gov.in/) | National Train Enquiry System (NTES) providing live train running statuses, platform locators, train schedule tables, and cancellation notices. |
-| 5 | [IHMCL FASTag Toll System](https://www.ihmcl.co.in/) | Indian Highway Management Company Limited specifications and integration guidelines for electronic toll collection across National Highways. |
-| 6 | [Survey of India - Online Map Portal (Nakshe)](https://onlinesoi.gov.in/) | National mapping agency portal providing georeferenced topographic sheets, Open Series Maps (OSM), and digital geospatial foundation data. |
-| 7 | [ISRO Bhuvan Geospatial Platform](https://bhuvan.nrsc.gov.in/) | National satellite imagery, thematic map layers, and OGC-compliant WMS/WFS map services managed by ISRO / NRSC. |
-| 8 | [Open Transit Data (OTD) Delhi](https://otd.delhi.gov.in/) | Open data platform providing real-time GTFS feeds, static schedules, bus routes, and live GPS coordinates for public transit across Delhi. |
+| 3 | [Bhuvan ISRO Geoportal](https://bhuvan.nrsc.gov.in/) | ISRO's national geo-spatial platform offering multi-sensor satellite imagery, thematic mapping layers, natural resource tracking, and OGC-compliant WMS/WFS map services. |
+| 4 | [AirSewa Portal](https://airsewa.gov.in/) | Ministry of Civil Aviation's unified portal tracking flight operations, air passenger charter guidelines, airport infrastructure data, and grievance redressal APIs. |
+| 5 | [CRIS Freight Operations Information System (FOIS)](https://www.fois.indianrail.gov.in/) | Indian Railways freight data system monitoring rake allocations, freight movement, loading logistics, and real-time transit tracking. |
+| 6 | [IRCTC / NTES Train Status](https://enquiry.indianrail.gov.in/) | National Train Enquiry System (NTES) providing live train running statuses, platform locators, train schedule tables, and cancellation notices. |
+| 7 | [IHMCL FASTag Toll System](https://www.ihmcl.co.in/) | Indian Highway Management Company Limited specifications and integration guidelines for electronic toll collection across National Highways. |
+| 8 | [Survey of India - Online Map Portal (Nakshe)](https://onlinesoi.gov.in/) | National mapping agency portal providing georeferenced topographic sheets, Open Series Maps (OSM), and digital geospatial foundation data. |
+| 9 | [Open Transit Data (OTD) Delhi](https://otd.delhi.gov.in/) | Open data platform providing real-time GTFS feeds, static schedules, bus routes, and live GPS coordinates for public transit across Delhi. |
+| 10 | [PM GatiShakti National Master Plan](https://gatishakti.gov.in/) | Integrated digital GIS platform synchronizing multi-modal logistics, economic zones, and physical connectivity infrastructure across India. |
 
 ---
 
-## 🌾 Agriculture & Rural Development
+## 🌾 4. Agriculture & Rural Development
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
@@ -76,10 +85,11 @@ Welcome to the definitive, community-driven master repository of official Indian
 | 5 | [NABARD Statistics & Rural Data](https://www.nabard.org/) | National Bank for Agriculture and Rural Development publications, rural credit flow datasets, and microfinance benchmarks. |
 | 6 | [PM-KISAN Samman Nidhi Portal](https://pmkisan.gov.in/) | Direct Benefit Transfer scheme tracking verification records, instalment disbursal statistics, and beneficiary status for Indian farmers. |
 | 7 | [Horticulture Area & Production Datasets](https://data.gov.in/catalog/all-india-and-state-wise-area-and-production-various-horticulture-crops) | Official statistical series covering acreage, crop yields, and seasonal production figures for horticulture and vegetable crops. |
+| 8 | [INAPH / Pashu Aadhaar (NDDB)](https://inaph.nddb.coop/) | National Dairy Development Board's information network assigning unique 12-digit ear tags for livestock genealogy, health, and milk tracking. |
 
 ---
 
-## 📊 Open Government Data (OGD) & Statistics
+## 📊 5. Open Government Data (OGD) & Statistics
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
@@ -89,10 +99,11 @@ Welcome to the definitive, community-driven master repository of official Indian
 | 4 | [MoSPI Official Statistics](https://www.mospi.gov.in/) | Ministry of Statistics and Programme Implementation publishing macroeconomic releases including National Accounts (GDP), CPI, and IIP. |
 | 5 | [Census of India Digital Library](https://censusindia.gov.in/) | Decennial census repository covering population tables, demographic attributes, literacy indicators, and administrative village directories. |
 | 6 | [Wholesale Price Index (WPI) Time Series](https://data.gov.in/catalog/wholesale-price-index-0) | Department for Promotion of Industry and Internal Trade (DPIIT) indices measuring monthly wholesale inflation metrics across commodity groups. |
+| 7 | [Consumer Price Index (CPI) Datasets](https://cpi.gov.in/) | National statistical database detailing urban, rural, and combined consumer price indices and monthly headline inflation metrics. |
 
 ---
 
-## 🏥 Health & Public Welfare
+## 🏥 6. Health & Public Welfare
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
@@ -102,23 +113,24 @@ Welcome to the definitive, community-driven master repository of official Indian
 | 4 | [e-Sanjeevani Teleconsultation System](https://esanjeevani.mohfw.gov.in/) | National telemedicine platform enabling virtual consultations, clinical case handling, and electronic prescription workflows. |
 | 5 | [Ni-kshay TB Management Portal](https://www.nikshay.in/) | National Tuberculosis Elimination Programme unified portal for patient registration, diagnostic reporting, treatment tracking, and nutritional DBT support. |
 | 6 | [Rural Health Statistics (RHS) Reports](https://data.gov.in/catalog/rural-health-statistics-india-2014) | Comprehensive health infrastructure census detailing health worker deployment, operational Sub-Centres, PHCs, and CHCs across rural India. |
+| 7 | [Poshan Tracker Portal](https://poshantracker.in/) | Ministry of Women and Child Development's operational system tracking Anganwadi service delivery, real-time child growth monitoring, and nutrition schemes. |
 
 ---
 
-## ⚡ Weather, Environment & Energy
+## 🌦️ 7. Weather, Climate & Environment
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
 | 1 | [IMD Mausam Weather Portal](https://mausam.imd.gov.in/) | India Meteorological Department’s portal for live meteorological observations, district weather forecasts, radar imagery, and cyclone bulletins. |
 | 2 | [CPCB Air Quality Index (AQI India)](https://app.cpcbccr.com/AQI_India/) | Central Pollution Control Board portal tracking real-time Air Quality Index, PM2.5, PM10, and industrial emissions data across national monitoring stations. |
-| 3 | [National Power Portal (NPP - CEA)](https://npp.gov.in/) | Central Electricity Authority platform tracking nationwide daily electricity generation, thermal plant fuel stocks, transmission indices, and capacity additions. |
-| 4 | [POSOCO / Grid-India Real-Time Reports](https://grid-india.in/) | Power System Operation Corporation reports monitoring real-time power grid frequencies, regional exchanges, peak load curves, and renewable energy penetration. |
-| 5 | [Central Water Commission (CWC) Flood Forecasting](https://ffs.india-water.gov.in/) | Real-time hydrological monitoring platform tracking reservoir storage volumes, river water stages, and national flood alerts. |
-| 6 | [IMD Rainfall & Climate Observations](https://data.gov.in/catalog/rainfall-india) | Decadal time-series meteorological dataset tracking seasonal, annual, and district-level rainfall distribution across India. |
+| 3 | [Central Water Commission (CWC) Flood Forecasting](https://ffs.india-water.gov.in/) | Real-time hydrological monitoring platform tracking reservoir storage volumes, river water stages, and national flood alerts. |
+| 4 | [IMD Rainfall & Climate Observations](https://data.gov.in/catalog/rainfall-india) | Decadal time-series meteorological dataset tracking seasonal, annual, and district-level rainfall distribution across India. |
+| 5 | [INCOIS Ocean Information Services](https://incois.gov.in/) | Real-time coastal data, Tsunami Early Warning System, Potential Fishing Zone (PFZ) advisories, and Indian Ocean sea surface state forecasts. |
+| 6 | [NCMRWF Weather Forecasts](https://www.ncmrwf.gov.in/) | National Centre for Medium Range Weather Forecasting computational numerical weather predictions and coupled climate model data. |
 
 ---
 
-## 🏛️ Legal, Governance & Tenders
+## 🏛️ 8. Legal, Governance & Tenders
 
 | Sr. No. | Name (with Official Link) | Description |
 | :---: | :--- | :--- |
@@ -128,6 +140,47 @@ Welcome to the definitive, community-driven master repository of official Indian
 | 4 | [India Code Legislative Repository](https://www.indiacode.nic.in/) | Digital repository containing consolidated full-text Central and State Acts, statutory orders, rules, and legislative amendments. |
 | 5 | [e-Gazette of India](https://egazette.gov.in/) | Official digital archive and search engine for extraordinary and regular Gazette notifications issued by the Government of India. |
 | 6 | [RTI Online Portal](https://rtionline.gov.in/) | Centralized gateway enabling citizens to file, manage, and track Right to Information (RTI) applications and statutory appeals across central public authorities. |
+| 7 | [Supreme Court e-Services (e-Committees)](https://services.ecourts.gov.in/) | Case status lookups, certified judgment downloads, digitally signed order sheets, and cause lists from the Supreme Court and subordinate judiciary. |
+
+---
+
+## 🎓 9. Education & Skill Development
+
+| Sr. No. | Name (with Official Link) | Description |
+| :---: | :--- | :--- |
+| 1 | [National Academic Depository (NAD)](https://nad.gov.in/) | 24/7 online depository for academic awards, degrees, marksheets, and digitally verified educational credentials integrated directly with DigiLocker. |
+| 2 | [UDISE+ (Unified District Information System for Education)](https://udiseplus.gov.in/) | Pan-India educational database tracking enrollment figures, school infrastructure, teacher allocations, and literacy parameters across 1.5 million+ schools. |
+| 3 | [Skill India Digital Portal](https://www.skillindiadigital.gov.in/) | National skilling architecture integrating apprentice listings, ITI courses, PMKVY certifications, and digital skill credential passports. |
+| 4 | [SWAYAM MOOCs Portal](https://swayam.gov.in/) | Ministry of Education's digital learning repository hosting university-accredited online courses, interactive video modules, and academic curricula. |
+| 5 | [DIKSHA Platform](https://diksha.gov.in/) | Digital Infrastructure for Knowledge Sharing providing QR-coded textbook resources, adaptive learning courses, and multi-lingual teaching content. |
+| 6 | [APAAR Portal (One Nation One Student ID)](https://apaar.education.gov.in/) | Automated Permanent Academic Account Registry creating lifelong 12-digit academic identities linked with the Academic Bank of Credits (ABC). |
+
+---
+
+## ⚡ 10. Energy, Utilities & Smart Cities
+
+| Sr. No. | Name (with Official Link) | Description |
+| :---: | :--- | :--- |
+| 1 | [National Power Portal (NPP - CEA)](https://npp.gov.in/) | Central Electricity Authority platform monitoring real-time power generation, fuel stocks, transmission indices, and operational plant metrics. |
+| 2 | [MERIT India Portal](https://meritindia.in/) | Merit Order Despatch of Electricity for Rejuvenation of Income and Transparency tracking state power purchase costs and marginal generation merit lists. |
+| 3 | [Smart Cities Mission Open Data Portal](https://smartcities.data.gov.in/) | DataSmart Cities open data repository with urban mobility, spatial sensor data, waste management, and civic IoT datasets across 100 smart cities. |
+| 4 | [Swachh Bharat Mission Urban (SBM Portal)](https://sbm.gov.in/) | National sanitation tracking system covering ODF certifications, solid waste processing plants, and geotagged community toilet assets. |
+| 5 | [Grid-India / POSOCO Real-Time Reports](https://grid-india.in/) | National load dispatch center reports detailing grid frequencies, regional power transfers, peak demands, and renewable energy penetration. |
+| 6 | [Jal Jeevan Mission IMIS](https://ejalshakti.gov.in/jjmreport/) | Integrated rural water monitoring system tracking Functional Household Tap Connections (FHTC), water quality metrics, and village tap coverage. |
+| 7 | [Vidyut PRAVAH Portal](https://vidyutpravah.in/) | Real-time pan-India electricity market data detailing spot market power prices, transmission availability, and power surplus/deficit states. |
+
+---
+
+## 📡 11. Telecom, Cyber & Postal Services
+
+| Sr. No. | Name (with Official Link) | Description |
+| :---: | :--- | :--- |
+| 1 | [TRAI Analytics Portal](https://trai.gov.in/) | Telecom Regulatory Authority of India datasets on broadband speed tests, telecom tariffs, subscriber density, and network QoS benchmarks. |
+| 2 | [CEIR Mobile Tracking Portal](https://ceir.gov.in/) | Central Equipment Identity Register for blocking lost/stolen mobile phones, IMEI traceability, and device authenticity checks. |
+| 3 | [India Post & Speed Post Directory](https://indiapost.gov.in/) | Department of Posts portal for postal article tracking, pin-code tariff calculation, Post Office location APIs, and postal banking services. |
+| 4 | [Sanchar Saathi Portal (DoT)](https://sancharsaathi.gov.in/) | Citizen-centric telecom security initiative by DoT providing SIM card ownership tracking (TAFCOP), wireline check, and lost mobile tracing. |
+| 5 | [Cyber Swachhta Kendra (CERT-In)](https://www.csk.gov.in/) | Indian Computer Emergency Response Team botnet cleaning and malware analysis centre providing threat feeds, security tools, and advisories. |
+| 6 | [National Cyber Crime Reporting Portal](https://cybercrime.gov.in/) | Citizen portal for reporting financial cyber fraud, helpline 1930 integration, and cyber threat telemetry across Indian law enforcement agencies. |
 
 ---
 
@@ -141,7 +194,7 @@ Contributions from developers, researchers, and open-source advocates are warmly
    git checkout -b add-new-portal
    ```
 3. **Add Your Entry**:
-   - Locate the most relevant of the 8 categories.
+   - Locate the most relevant of the 11 categories.
    - Insert a new row in the Markdown table keeping numerical order in `Sr. No.`.
    - Ensure the name links directly to the official `.gov.in`, `.nic.in`, or verified institutional website using `[Name](URL)`.
    - Write a crisp, value-driven description highlighting what the endpoint/portal offers developers.

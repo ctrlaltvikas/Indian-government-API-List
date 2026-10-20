@@ -19,12 +19,12 @@
   <meta name="theme-color" content="#0a192f" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 
-  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <!-- UX4G Official Design System Fonts: Noto Sans & Noto Sans Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Display:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Core Stylesheet -->
+  <!-- Core UX4G Aligned Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <!-- Prevent Theme FOUC -->
@@ -44,6 +44,9 @@
   </script>
 </head>
 <body>
+  <!-- UX4G Accessibility: Skip to Main Content Link -->
+  <a href="#app-main" class="skip-link">Skip to main content</a>
+
   {% include header.html %}
   {% include hero.html %}
 
