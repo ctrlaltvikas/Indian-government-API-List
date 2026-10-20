@@ -1,0 +1,28 @@
+# Site settings
+title: "Indian Government APIs & Data Sources"
+description: "Community-driven master directory of official Indian Government APIs, open data portals, and Digital Public Infrastructure (DPI)."
+author: "ctrlaltvikas"
+repository: "ctrlaltvikas/Indian-government-API-List"
+github_username: "ctrlaltvikas"
+url: "https://ctrlaltvikas.github.io"
+baseurl: "/Indian-government-API-List"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Plugins allowed by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle

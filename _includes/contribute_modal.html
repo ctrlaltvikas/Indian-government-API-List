@@ -1,0 +1,79 @@
+<!-- Contribution Drawer / Modal -->
+<div class="modal-overlay" id="contribute-modal" aria-hidden="true">
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+  <div class="modal-dialog" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-header">
+      <div class="modal-header-title">
+        <span class="modal-icon">🤝</span>
+        <h3 id="modal-title">How to Contribute</h3>
+      </div>
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <p class="modal-lead">
+        This directory is 100% open-source and maintained by the developer community. If you know of an official government API, open dataset, or verified portal, follow these quick steps:
+      </p>
+
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Pick the Right Category</h4>
+            <p>Identify which of the 8 categories best suits the API (Identity, Finance, Logistics, Agriculture, OGD, Health, Weather, or Legal).</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Verify the Official Link</h4>
+            <p>Ensure the URL points to an official government domain (e.g. <code>.gov.in</code>, <code>.nic.in</code>, <code>.org.in</code>) or verified national body.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Format Your Table Row</h4>
+            <div class="code-template-box">
+              <pre><code id="markdown-row-template">| <span class="tok-num">&lt;Sr. No.&gt;</span> | [<span class="tok-str">Portal Name</span>](<span class="tok-url">https://official-portal.gov.in/</span>) | <span class="tok-desc">Crisp, value-driven description for developers.</span> |</code></pre>
+              <button type="button" class="btn btn-sm btn-secondary copy-snippet-btn" id="btn-copy-template">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy Template</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="https://github.com/ctrlaltvikas/Indian-government-API-List/edit/master/README.md" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-direct-edit">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+        </svg>
+        <span>Edit README on GitHub</span>
+      </a>
+      <a href="https://github.com/ctrlaltvikas/Indian-government-API-List/pulls" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <span>View Pull Requests</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Copy Toast Notification -->
+<div class="toast-notification" id="toast-notification" role="alert" aria-live="polite">
+  <div class="toast-content">
+    <svg class="toast-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Copied official link to clipboard!</span>
+  </div>
+</div>

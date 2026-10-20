@@ -1,0 +1,118 @@
+---
+layout: default
+title: "🇮🇳 Indian Government APIs & Data Sources | Open Master Directory"
+description: "Master open-source directory of official Indian Government APIs, open data catalogs, and Digital Public Infrastructure (DPI) for developers."
+---
+
+<!-- Raw Markdown Engine Source (Automatically rendered from README.md via Jekyll Kramdown) -->
+<div id="readme-raw-source" style="display: none;" aria-hidden="true">
+{% capture readme_content %}{% include_relative README.md %}{% endcapture %}
+{{ readme_content | markdownify }}
+</div>
+
+<!-- Fallback for Non-JS Crawlers & Readers -->
+<noscript>
+  <div class="container noscript-container">
+    <div class="noscript-alert">
+      <strong>Note:</strong> You are viewing the static document view. Enable JavaScript for instant search, category filtering, and interactive card views.
+    </div>
+    <div class="static-content">
+      {% capture static_readme %}{% include_relative README.md %}{% endcapture %}
+      {{ static_readme | markdownify }}
+    </div>
+  </div>
+</noscript>
+
+<!-- Interactive Modern Application Layer -->
+<main class="main-content" id="app-main">
+  <!-- Sticky Interactive Toolbar -->
+  <section class="toolbar-section" id="toolbar-section">
+    <div class="container toolbar-container">
+      
+      <!-- Category Pills Filter Bar -->
+      <div class="category-filter-wrapper">
+        <div class="category-scroll-container" id="category-pills" role="tablist" aria-label="API Categories">
+          <!-- Populated dynamically by app.js -->
+          <button type="button" class="category-pill active" data-category="all" role="tab" aria-selected="true">
+            <span class="pill-icon">✨</span>
+            <span class="pill-name">All Portals</span>
+            <span class="pill-count" id="pill-count-all">...</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Control Bar: Visible count, View Mode, Domain Filter -->
+      <div class="controls-bar">
+        <div class="stats-counter" id="stats-counter">
+          Showing <span class="counter-highlight" id="count-visible">...</span> of <span class="counter-total" id="count-total">...</span> verified endpoints
+        </div>
+
+        <div class="controls-actions">
+          <!-- Domain Filter Filter -->
+          <div class="filter-dropdown-wrapper">
+            <label for="domain-filter" class="sr-only">Filter by domain</label>
+            <select id="domain-filter" class="domain-select" aria-label="Filter by official domain">
+              <option value="all">All Domains</option>
+              <option value="gov">Official .gov.in &amp; .nic.in</option>
+              <option value="other">Public Institutions (.org / .in)</option>
+            </select>
+          </div>
+
+          <!-- View Mode Toggles: Card Grid vs Data Table -->
+          <div class="view-mode-toggle" role="group" aria-label="View Mode">
+            <button type="button" class="view-btn active" id="btn-view-grid" title="Card Grid View" aria-label="Card Grid View" aria-pressed="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span class="view-btn-label">Cards</span>
+            </button>
+            <button type="button" class="view-btn" id="btn-view-table" title="Data Table View" aria-label="Data Table View" aria-pressed="false">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              <span class="view-btn-label">Table</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Directory Results Section -->
+  <section class="results-section">
+    <div class="container">
+      <!-- Loading Skeleton (Dismissed once JS parses) -->
+      <div id="loading-skeleton" class="skeleton-grid">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+
+      <!-- Card Grid Container -->
+      <div id="apis-grid-view" class="apis-grid-wrapper" style="display: none;">
+        <!-- Populated dynamically with category groups & cards -->
+      </div>
+
+      <!-- Data Table Container -->
+      <div id="apis-table-view" class="apis-table-wrapper" style="display: none;">
+        <!-- Populated dynamically with interactive tables -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state" style="display: none;">
+        <div class="empty-state-graphic">🔍</div>
+        <h3 class="empty-state-title">No APIs match your search</h3>
+        <p class="empty-state-desc">We couldn't find any endpoints matching "<span id="empty-query-text"></span>". Try a different query or reset your filters.</p>
+        <button type="button" class="btn btn-primary" id="btn-reset-filters">Reset All Filters</button>
+      </div>
+    </div>
+  </section>
+</main>
